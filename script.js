@@ -39,6 +39,8 @@ const nevNumber = document.getElementById('nev-number')
     ${hour}: ${minut}:${socends}:${tomeZon}
     `
 
+
+
     const div = document.createElement("div");
     
     div.classList.add('bg-[#c8d6e5]');
@@ -46,11 +48,12 @@ const nevNumber = document.getElementById('nev-number')
     div.classList.add('mx-2');
     div.classList.add('px-2');
     div.innerHTML=`
-    <h1 class="text-black text-center my-2 ">You Have Complete The Task Add Dark Mode at
+
+    <h1 class="text-black text-center my-2 ">You Have Complete The Task 
     ${newtTime}
     </h1>
     `
-    cardDiv.appendChild(div)
+    cardDiv.appendChild(div);
     if(tasknmbr.length<=0){
       alert('lkd')
        }
@@ -58,3 +61,6 @@ const nevNumber = document.getElementById('nev-number')
 }
 
 // card section start
+const cardBtn = document.getElementById('card-btn').addEventListener('click',function(){
+ document.getElementById('card-div').innerHTML ='';
+})
