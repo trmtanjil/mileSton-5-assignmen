@@ -1,15 +1,24 @@
 const completebutton = document.querySelectorAll('.completed-btn');
-
+ 
 for (let i=0; i<completebutton.length; i++){
   const  cmpltbtn= completebutton[i];
- 
+
     completitem =   cmpltbtn.addEventListener('click',function(value){
    alert('Board Updated Succenfull')
+   
+   this.Disabled= true;
+   this.classList.add("bg-gray-300");
+
  const tasknmbr=  document.getElementById('task-nmbr');
  const valuee = value.target.innerText ==='' ? 1 : -1;
  const taskNmbeInt =parseInt(tasknmbr.innerText);
  const newtastNumber = Math.max(0, taskNmbeInt + valuee);
  tasknmbr.innerText = newtastNumber;
+
+ 
+ if(taskNmbeInt<=1){
+  alert('terwe')
+ };
 
 //   nev number pluss add 
 const nevNumber = document.getElementById('nev-number')
@@ -42,8 +51,10 @@ const nevNumber = document.getElementById('nev-number')
     </h1>
     `
     cardDiv.appendChild(div)
+    if(tasknmbr.length<=0){
+      alert('lkd')
+       }
     })
- 
 }
 
 // card section start
