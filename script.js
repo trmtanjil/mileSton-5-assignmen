@@ -80,5 +80,12 @@ const newTime = dscTime.toDateString();
 console.log(newTime);
 innetDate.innerText = newTime;
 
-// console.log(date.toDateString()); // "Sat Mar 01 2025"
+
+
+// bg color section 
+
+document.getElementById('bg-change-btn').addEventListener('click',function(){
+ const random = Math.random()*2+1;
+ console.log(random);
+})
 
