@@ -63,4 +63,13 @@ const nevNumber = document.getElementById('nev-number')
 // card section start
 const cardBtn = document.getElementById('card-btn').addEventListener('click',function(){
  document.getElementById('card-div').innerHTML ='';
+});
+
+
+// discover Selection
+document.getElementById('discover-div').addEventListener('click', function(){
+  console.log('kls');
+  window.location.href = "index1.html";
 })
+
+
