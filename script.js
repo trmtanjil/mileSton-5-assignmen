@@ -72,4 +72,13 @@ document.getElementById('discover-div').addEventListener('click', function(){
   window.location.href = "./index1.html";
 })
 
+// discover-time section 
+
+const innetDate =document.getElementById('discover-time');
+const dscTime =  new Date();
+const newTime = dscTime.toDateString();
+console.log(newTime);
+innetDate.innerText = newTime;
+
+// console.log(date.toDateString()); // "Sat Mar 01 2025"
 
