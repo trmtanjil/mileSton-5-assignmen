@@ -77,7 +77,6 @@ document.getElementById('discover-div').addEventListener('click', function(){
 const innetDate =document.getElementById('discover-time');
 const dscTime =  new Date();
 const newTime = dscTime.toDateString();
-console.log(newTime);
 innetDate.innerText = newTime;
 
 
@@ -85,7 +84,11 @@ innetDate.innerText = newTime;
 // bg color section 
 
 document.getElementById('bg-change-btn').addEventListener('click',function(){
- const random = Math.random()*2+1;
- console.log(random);
+ const random =Math.round( Math.random()*255)
+ let r=Math.round( Math.random()*255)
+ let g=Math.round( Math.random()*255)
+ let b=Math.round( Math.random()*255)
+ console.log(r,g,b);
+ document.body.style.backgroundColor= "rgb("+ r +","+g+","+b+")";
 })
 
