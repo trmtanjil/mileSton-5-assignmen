@@ -69,7 +69,7 @@ const cardBtn = document.getElementById('card-btn').addEventListener('click',fun
 // discover Selection
 document.getElementById('discover-div').addEventListener('click', function(){
   console.log('kls');
-  window.location.href = "index1.html";
+  window.location.href = "./index1.html";
 })
 
 
