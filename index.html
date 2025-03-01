@@ -18,12 +18,12 @@
    <div class="main-nav-div">
     <div class="nav-logo">
         <img src="./assets/logo.png" alt="logo img">
-        <h3>Dev <span>Board</span></h3>
+        <h3>Dev <span class="font-bold">Board</span></h3>
     </div>
     <div class="nav-button">
         <div class="chacbox-btn">
            <img src="./assets/checkbox.png" alt="checkbox btn">
-            <p>23</p>
+            <p id="nevnumber">23</p>
         </div>
         <div class="color-btn">
             <img src="./assets/theme-btn.png" alt="theme btn">
@@ -39,7 +39,7 @@
             <h5 class="task-h5">Task Assigned</h5>
            <div class="head-chacbox-btn">
             <img src="./assets/checkbox.png" alt="checkbox btn">
-            <p>23</p>
+            <p id="task-nmbr">6</p>
            </div>
          </div>
     </div>
@@ -59,7 +59,132 @@
 
 <!-- main part -->
 <section>
+<div class="flex gap-2 justify-between py-4 ">
+    <div class="grid gap-2 justify-around bg-[#e1ede7] p-2 rounded-md md:grid-cols-2 lg:grid-cols-3">
 
+        <div class="card bg-[#f1f5f5]   ">
+            <div class="card-body ">
+               <div> <p class="bg-slate-200 inline-block p-[5px] rounded-md">ShopEase</p></div>
+              <h2 class="card-title">Fix Mobile Button Issue</h2>
+              <p class="bg-white p-[5px] rounded-md">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+              <div class="card-actions  justify-between">
+                <div>
+                    <p>Deadline</p>
+                    <h2>21 March 2025</h2>
+                </div>
+                <button class="btn  text-white   bg-indigo-700 completed-btn">Completed</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- box 2 -->
+          <div class="card bg-[#f1f5f5]   ">
+            <div class="card-body ">
+               <div> <p class="bg-slate-200 inline-block p-[5px] rounded-md">CloudSync</p></div>
+              <h2 class="card-title">Add Dark Mode</h2>
+              <p class="bg-white p-[5px] rounded-md">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+              <div class="card-actions  justify-between">
+                <div>
+                    <p>Deadline</p>
+                    <h2>21 March 2025</h2>
+                </div>
+                <button   class="btn text-white   bg-indigo-700 completed-btn">Completed</button>
+              </div>
+            </div>
+          </div>
+          <!-- box 3 -->
+          <div class="card bg-[#f1f5f5]   ">
+            <div class="card-body ">
+               <div> <p class="bg-slate-200 inline-block p-[5px] rounded-md">SwiftPay</p></div>
+              <h2 class="card-title">Optimize  Home page </h2>
+              <p class="bg-white p-[5px] rounded-md">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+              <div class="card-actions  justify-between">
+                <div>
+                    <p>Deadline</p>
+                    <h2>21 March 2025</h2>
+                </div>
+                <button class="btn  text-white   bg-indigo-700 completed-btn">Completed</button>
+              </div>
+            </div>
+          </div>
+          <!-- box 4 -->
+          <div class="card bg-[#f1f5f5]   ">
+            <div class="card-body ">
+               <div> <p class="bg-slate-200 inline-block p-[5px] rounded-md">Meta</p></div>
+              <h2 class="card-title">Add new emoji 🤲</h2>
+              <p class="bg-white p-[5px] rounded-md">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+              <div class="card-actions  justify-between">
+                <div>
+                    <p>Deadline</p>
+                    <h2>21 March 2025</h2>
+                </div>
+                <button class="btn  text-white   bg-indigo-700 completed-btn">Completed</button>
+              </div>
+            </div>
+          </div>
+          <!-- box 5 -->
+          <div class="card bg-[#f1f5f5]   ">
+            <div class="card-body ">
+               <div> <p class="bg-slate-200 inline-block p-[5px] rounded-md">Google LLC</p></div>
+              <h2 class="card-title">Integrate OpenAI API </h2>
+              <p class="bg-white p-[5px] rounded-md">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+              <div class="card-actions  justify-between">
+                <div>
+                    <p>Deadline</p>
+                    <h2>21 March 2025</h2>
+                </div>
+                <button class="btn  text-white   bg-indigo-700 completed-btn">Completed</button>
+              </div>
+            </div>
+          </div>
+          <!-- box 6 -->
+          <div class="card bg-[#f1f5f5]   ">
+            <div class="card-body ">
+               <div> <p class="bg-slate-200 inline-block p-[5px] rounded-md">Glassdoar</p></div>
+              <h2 class="card-title">Improve Job searching </h2>
+              <p class="bg-white p-[5px] rounded-md">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+              <div class="card-actions  justify-between">
+                <div>
+                    <p>Deadline</p>
+                    <h2>21 March 2025</h2>
+                </div>
+                <button class="btn  text-white   bg-indigo-700 completed-btn">Completed</button>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- part 2  -->
+     
+       <!-- box3 -->
+   
+
+
+
+    </div>
+
+    <div class="card bg-[#e7edfa] text-primary-content  h-[600px] w-[500px]">
+        <div class="card-body">
+          <div class="flex items-center gap-4 justify-center">
+            <img class="w-4 h-4 cursor-pointer"  src="./assets/activity.png" alt="">
+            <h2 class=" text-black font-bold cursor-pointer">Card title!</h2>
+          </div>
+          
+          <div class="card-actions justify-center">
+            <button class="btn  bg-[#3742fa] ">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </section>
 <!-- ?main section end -->
 
