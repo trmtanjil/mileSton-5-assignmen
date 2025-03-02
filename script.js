@@ -29,7 +29,7 @@ const nevNumber = document.getElementById('nev-number')
         nevNumber.innerText= newNaveNumber;
 
         // card messege import section start 
-
+    const mobileBtn =document.getElementById("mobile-butto").innerText;
     const cardDiv =document.getElementById('card-div');
     const todayDate = new Date();
     const hour= todayDate.getHours()||12;
@@ -48,6 +48,7 @@ const nevNumber = document.getElementById('nev-number')
  
     div.innerHTML=`
     <h1 class="text-black text-center my-2 ">You Have Complete The Task 
+    ${mobileBtn}
      ${newtTime} 
     </h1>
     `
