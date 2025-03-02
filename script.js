@@ -17,7 +17,7 @@ for (let i=0; i<completebutton.length; i++){
 
  
  if(taskNmbeInt<=1){
-  alert('terwe')
+  alert('congrates!!! You have completed all the current task')
  };
 
 //   nev number pluss add 
@@ -52,15 +52,11 @@ const nevNumber = document.getElementById('nev-number')
     div.innerHTML=`
 
     <h1 class="text-black text-center my-2 ">You Have Complete The Task 
+     ${newtTime} 
     </h1>
-    
-    <p class="text-black">${newtTime}</p>
-
     `
     cardDiv.appendChild(div);
-    if(tasknmbr.length<=0){
-      alert('lkd')
-       }
+    
     })
 }
 
@@ -72,17 +68,16 @@ const cardBtn = document.getElementById('card-btn').addEventListener('click',fun
 
 // discover Selection
 document.getElementById('discover-div').addEventListener('click', function(){
-  console.log('kls');
   window.location.href = "./index1.html";
 })
 
 // discover-time section 
 
 const innetDate =document.getElementById('discover-time');
-const dscTime =  new Date();
-const newTime = dscTime.toDateString();
-innetDate.innerText = newTime;
-
+const dscTime = new Date();
+const dayy = dscTime.toLocaleDateString('en-US',{weekday: 'long'});
+const datee = dscTime.toLocaleDateString("en-US",{month: "long",day:"numeric",year:'numeric',})
+innetDate.innerHTML=`${dayy} <br> ${datee}`;
 
 
 // bg color section 
