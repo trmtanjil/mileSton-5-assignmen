@@ -20,6 +20,7 @@ for (let i=0; i<completebutton.length; i++){
   alert('congrates!!! You have completed all the current task')
  };
 
+
 //   nev number pluss add 
 const nevNumber = document.getElementById('nev-number')
         const nevNumPlus = value.target.innerText==='' ?-1: 1;
@@ -38,9 +39,6 @@ const nevNumber = document.getElementById('nev-number')
     const newtTime = `
     ${hour}: ${minut}:${socends}:${tomeZon}
     `
-
-
-
     const div = document.createElement("div");
     
     div.classList.add('bg-[#c8d6e5]');
@@ -48,9 +46,7 @@ const nevNumber = document.getElementById('nev-number')
     div.classList.add('mx-2');
     div.classList.add('px-2');
  
-    
     div.innerHTML=`
-
     <h1 class="text-black text-center my-2 ">You Have Complete The Task 
      ${newtTime} 
     </h1>
