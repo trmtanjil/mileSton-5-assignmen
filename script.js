@@ -47,11 +47,15 @@ const nevNumber = document.getElementById('nev-number')
     div.classList.add('rounded-md');
     div.classList.add('mx-2');
     div.classList.add('px-2');
+ 
+    
     div.innerHTML=`
 
     <h1 class="text-black text-center my-2 ">You Have Complete The Task 
-    ${newtTime}
     </h1>
+    
+    <p class="text-black">${newtTime}</p>
+
     `
     cardDiv.appendChild(div);
     if(tasknmbr.length<=0){

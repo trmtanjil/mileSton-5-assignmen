@@ -21,11 +21,44 @@
         <div class="bg-slate-100 rounded-md py-3 px-2">
             <h3 class="font-bold">Question-1: What are the different ways to select an element in the DOM</h3>
             <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, alias soluta!</p>
+            <p>জাভাস্ক্রিপ এ আমরা বিভিন্নভাবে (1). HTML Element Select করতে পারি যেমন  getElementById Id ধরে সিলেক্ট করার জন্য ব্যবহার করা হয় (2). GetElementByClassName  একই ক্লাসের সকল এলিমেন্ট ধরার জন্য ব্যবহার করা হয়
+              (3.)  get element by tagname একই নামে সকল এলিমেন্ট ধরার জন্য ব্যবহার করা হয় QuarySelector CSS সিলেক্টর দিয়ে সিলেক্ট করা হয় QuarySelectorAll সকল এলিমেন্ট সিলেক্ট করা হয়  ;  
+            </p>
+        </div>
+        <!-- qu 2 -->
+        <div class="bg-slate-100 rounded-md py-3 px-2 my-3">
+            <h3 class="font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+            <hr>
+            <p>  (1).textContent যার মাধ্যমে এলিমেন্টের ভিতরে value output দেয় তবে এলিমেন্ট এর জায়গায় স্পেস থাকে (2).innerHTML যার মাধ্যমে ট্যাগ সহ আউটপুট প্রদান করে HTML tag add করা যায়
+              (3.)  innerText শুধু  text output দেয়  ;  
+            </p>
+        </div>
+        <!-- qu 3 -->
+        <div class="bg-slate-100 rounded-md py-3 px-2 my-3">
+            <h3 class="font-bold">Question-3: What is event delegation in the DOM?</h3>
+            <hr>
+            <p>  (1).একাধিকElement এর জন্য একটাই ইভেন লিসেনার রাখা এবং নতুন এলিমেন্ট যুগ করলে যেন লিসেনার কাজ করে ,ইভেন্ট লিসেনার করানোর জন্য প্যারেন্ট কে নিয়ে কাজ করে থাকে;
+            </p>
+        </div>
+        <!-- qu 4 -->
+        <div class="bg-slate-100 rounded-md py-3 px-2 my-3">
+            <h3 class="font-bold">Question-3: What is event delegation in the DOM?</h3>
+            <hr>
+            <p>  (1). Event Bubbling  মূলত Down order  কাজ করে থাকে নিচ থেকে উপরে আমরা যদি form div button নেই AddeventListener করলে Button আগে কাজ করবে পরে div then form কাজ করবে
+            </p>
+        </div>
+        <!-- qu 5 -->
+        <div class="bg-slate-100 rounded-md py-3 px-2 my-3">
+            <h3 class="font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+            <hr>
+            <p>  (1).document.CretElement use করে ভিবিন্ন element Create করতে পারি ,
+                (2).AppendChild বেবহার করে element add করতে পারি 
+                (3).removechild বেবহার করে element remove করতে পারি ;
+            </p>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <script>
         document.getElementById('click-to-back').addEventListener('click',function(){
             window.location.href = "index.html";
