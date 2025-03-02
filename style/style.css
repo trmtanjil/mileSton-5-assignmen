@@ -84,8 +84,14 @@ border-radius: 3px;
 }
 .card-div{
     height: 1px;
-    border: 1px dashed deeppink;
+    border: 1px dashed rgb(121, 110, 116);
     width: 100%;
+}
+.card-div2{
+    height: 1px;
+    border: 1px dashed rgb(127, 118, 123);
+    width: 100%;
+    margin-top: 10px;
 }
 
 
