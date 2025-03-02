@@ -5,7 +5,7 @@ for (let i=0; i<completebutton.length; i++){
 
     completitem =   cmpltbtn.addEventListener('click',function(value){
    alert('Board Updated Succenfull')
-   
+
    this.Disabled= true;
    this.classList.add("bg-gray-300");
 
@@ -29,6 +29,7 @@ const nevNumber = document.getElementById('nev-number')
         nevNumber.innerText= newNaveNumber;
 
         // card messege import section start 
+
     const mobileBtn =document.getElementById("mobile-butto").innerText;
     const cardDiv =document.getElementById('card-div');
     const todayDate = new Date();
